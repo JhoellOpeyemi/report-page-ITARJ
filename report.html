@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Report A Job | ITARJ</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <img src="./images/itarj-logo.png" alt="ITARJ Logo" />
+        </div>
+
+        <nav>
+          <div class="nav-links-group">
+            <a href="#" class="nav-links">Home</a>
+            <a href="#" class="nav-links">How It Works</a>
+            <a href="#" class="nav-links">Job Tips</a>
+            <a href="#" class="nav-links">Report A Job</a>
+          </div>
+
+          <span class="search-group">
+            <img src="./images/search-icon.png" alt="" class="search-icon" />
+            <input
+              type="search"
+              name="search"
+              id="search-job"
+              class="search-input"
+              placeholder="Search"
+            />
+          </span>
+
+          <button>
+            <i class="far fa-user-circle"></i>
+          </button>
+        </nav>
+
+        <div class="hamburger">
+          <img src="./images/bars-solid.svg" alt="" class="bars" />
+        </div>
+      </header>
+
+      <main>
+        <div class="main-form">
+          <h1 class="main-heading">Report A Fake Job</h1>
+
+          <form class="job-report-form" id="report">
+            <div class="input-group">
+              <label for="job-title">Job title</label>
+              <input type="text" name="job-title" id="job-title" />
+            </div>
+
+            <div class="input-group">
+              <label for="company-name">Name of company</label>
+              <input type="text" name="company-name" id="company-name" />
+            </div>
+
+            <div class="input-group">
+              <label for="company-address">Address of company</label>
+              <input type="text" name="company-address" id="company-address" />
+            </div>
+
+            <div class="input-group">
+              <label for="company-email">Email address of company</label>
+              <input type="email" name="company-email" id="company-email" />
+            </div>
+
+            <div class="input-group">
+              <label for="phone-number">Phone number (if applicable)</label>
+              <input type="number" name="phone-number" id="phone-number" />
+            </div>
+
+            <div class="input-group">
+              <label for="reason">Tell us why you feel it's a fake job</label>
+              <textarea name="reason" id="reason"></textarea>
+            </div>
+
+            <button
+              type="submit"
+              value="submit"
+              class="submit-report"
+              form="report"
+            >
+              Post
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="first-part">
+          <div class="logo-container">
+            <img src="./images/itarj-logo.png" alt="ITARJ Logo" />
+          </div>
+
+          <div class="links">
+            <a href="#" class="link">How It Works</a>
+            <a href="#" class="link">Why Itarj</a>
+            <a href="#" class="link">Features</a>
+            <a href="#" class="link">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="second-part">
+          <div class="copyright">
+            <p>&copy; ITarj 2021 All rights reserved</p>
+          </div>
+
+          <div class="links">
+            <a href="#" class="link">Terms Of Service</a>
+            <a href="#" class="link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

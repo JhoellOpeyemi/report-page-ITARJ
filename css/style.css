@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* Variables */
+:root {
+  --pry-color: #041f65;
+  --white: #fff;
+  --black: #000;
+  --transition-delay: 500ms;
+}
+
+/* Basic Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  color: var(--pry-color);
+  outline: 0.15rem dashed var(--pry-color);
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  min-height: 100vh;
+}
+
+/* Styles */
+.container {
+  margin: 0 auto;
+  width: 92%;
+  max-width: 1420px;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.logo-container img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: var(--black);
+  font-weight: 400;
+  padding: 0.2rem 0.6rem;
+  margin-right: 1.3rem;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-delay);
+}
+
+.nav-links:hover {
+  color: var(--pry-color);
+  border-bottom: 2px solid var(--pry-color);
+}
+
+span.search-group {
+  display: inline-block;
+  position: relative;
+  width: 14.9375rem;
+  margin-right: 2.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 0.6;
+  margin-left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border: 1px solid var(--black);
+  border-radius: 2rem;
+  letter-spacing: 1px;
+}
+
+.search-input::placeholder {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+nav button {
+  background: none;
+  border: 0;
+}
+
+.fa-user-circle {
+  font-size: 2.75rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Main */
+main {
+  margin-bottom: 20.125rem;
+}
+
+.main-form {
+  width: 85%;
+  max-width: 41.3125rem;
+  margin: 0 auto;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 3.75rem 0;
+}
+
+.input-group {
+  margin-bottom: 2.25rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1.5625rem;
+}
+
+.input-group input {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.input-group input:focus {
+  color: var(--pry-color);
+  outline: 0;
+  border-radius: 1rem;
+  border: 0.24rem dashed var(--pry-color);
+}
+
+.input-group textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 20rem;
+  min-height: 20rem;
+  max-height: 20rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.job-report-form button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.4rem;
+  background: var(--pry-color);
+  color: var(--white);
+  border-radius: 1rem;
+}
+
+/* Footer */
+
+footer {
+  background: var(--pry-color);
+}
+
+.footer {
+  margin: 0 auto;
+  width: 92%;
+  max-width: 1420px;
+  color: var(--white);
+}
+
+.footer a {
+  color: var(--white);
+  padding: 0.2rem 0.6rem;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-delay);
+}
+
+.footer a:hover,
+.footer a:focus {
+  border-bottom: 2px solid var(--white);
+}
+
+.first-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-part .logo-container {
+  transform: translateY(-70%);
+}
+
+.first-part .links {
+  margin: 3.75rem 0;
+}
+
+.first-part .links a:not(:last-child) {
+  margin-right: 2.25rem;
+}
+
+.second-part {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5625rem 0;
+  border-top: 2px solid var(--white);
+}
+
+.copyright p {
+  font-weight: 300;
+}
+
+.second-part .links .link {
+  margin-left: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 71.875rem) {
+  span.search-group {
+    display: block;
+    position: absolute;
+    width: 65%;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .search-input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .fa-user-circle {
+    margin-left: 1.5rem;
+  }
+
+  main {
+    margin-top: 12rem;
+  }
+
+  .input-group input {
+    height: 4rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 53.75rem) {
+  .hamburger {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-links-group {
+    position: absolute;
+    background: var(--white);
+    top: 9vh;
+    left: 50%;
+    transform: translate(-50%, -170%);
+    width: 20rem;
+    height: 23rem;
+    padding: 3rem 3rem;
+    margin-top: 3rem;
+    z-index: 2;
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    transition: all var(--transition-delay);
+  }
+
+  .nav-links-group.active {
+    transform: translate(-50%, 0);
+  }
+
+  .nav-links {
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+  }
+
+  .fa-user-circle {
+    margin-left: 0;
+  }
+
+  .footer a {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .first-part {
+    flex-direction: column;
+  }
+
+  .first-part .logo-container {
+    align-self: flex-start;
+    transform: translateY(-40%);
+  }
+
+  .first-part .links {
+    margin: 2rem 0;
+    align-self: flex-end;
+  }
+
+  .first-part .links a:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .second-part {
+    flex-direction: column-reverse;
+  }
+
+  .second-part .links {
+    align-self: flex-end;
+  }
+
+  .second-part .copyright {
+    font-size: 1rem;
+    margin-top: 4rem;
+    align-self: center;
+  }
+
+  .second-part .links .link {
+    margin-left: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 31.9375rem) {
+  .logo-container img {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
+
+  .nav-links-group {
+    width: 18rem;
+  }
+
+  span.search-group {
+    width: 95%;
+    top: 140%;
+  }
+
+  main {
+    margin-top: 9rem;
+  }
+
+  .main-heading {
+    font-size: 1.6rem;
+    margin: 3rem 0;
+  }
+
+  .input-group label {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .job-report-form button {
+    font-size: 1.25rem;
+  }
+
+  .first-part .links,
+  .second-part .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+    align-self: center;
+    text-align: center;
+  }
+
+  .first-part .links a,
+  .second-part .links a {
+    margin-bottom: 1.5rem;
+  }
+
+  .second-part .copyright {
+    margin-top: 2rem;
+  }
+}
