@@ -164,6 +164,10 @@ main {
   border: 0.24rem dashed var(--pry-color);
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .input-group textarea {
   width: 100%;
   min-width: 100%;
